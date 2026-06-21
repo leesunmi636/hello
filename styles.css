@@ -693,6 +693,12 @@ button {
   border-bottom: 1px solid var(--line);
 }
 
+.notice-board-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
 .notice-board-head h2 {
   margin: 0;
   font-size: 20px;
@@ -701,6 +707,23 @@ button {
 .notice-board-head span {
   color: var(--muted);
   font-weight: 700;
+}
+
+.write-button {
+  min-height: 38px;
+  padding: 0 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: var(--button-text);
+  border-radius: 8px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.write-button:hover {
+  background: var(--primary-dark);
 }
 
 .notice-post {
@@ -865,5 +888,16 @@ button {
 
   .notice-label {
     width: 86px;
+  }
+
+  .notice-board-head {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  .notice-board-actions {
+    width: 100%;
+    justify-content: space-between;
   }
 }

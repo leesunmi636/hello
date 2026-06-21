@@ -638,6 +638,110 @@ button {
   font-weight: 800;
 }
 
+.notice-page-header,
+.notice-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.notice-page-header {
+  padding-top: 34px;
+  padding-bottom: 24px;
+}
+
+.back-link {
+  display: inline-flex;
+  margin-bottom: 22px;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.notice-page-header .eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.notice-page-header h1 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.25;
+}
+
+.notice-page-header p:last-child {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.notice-board {
+  margin-bottom: 56px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.notice-board-head {
+  min-height: 64px;
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.notice-board-head h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.notice-board-head span {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.notice-post {
+  padding: 22px;
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 18px;
+}
+
+.notice-post + .notice-post {
+  border-top: 1px solid var(--line);
+}
+
+.notice-label {
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--tag-bg);
+  color: var(--tag-text);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.notice-post h3 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.notice-post p {
+  margin: 8px 0 10px;
+  color: var(--muted);
+}
+
+.notice-post time {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
 @media (max-width: 1080px) {
   .portal-layout {
     grid-template-columns: 1fr;
@@ -743,5 +847,23 @@ button {
   .login-panel div {
     flex-wrap: wrap;
     gap: 10px 16px;
+  }
+
+  .notice-page-header,
+  .notice-page {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .notice-page-header h1 {
+    font-size: 28px;
+  }
+
+  .notice-post {
+    grid-template-columns: 1fr;
+  }
+
+  .notice-label {
+    width: 86px;
   }
 }
